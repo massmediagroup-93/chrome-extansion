@@ -3,6 +3,9 @@ import ReactModal from 'react-modal'
 import styles from './modal.module.scss'
 
 const customStyles = {
+  overlay: {
+    zIndex: 100,
+  },
   content: {
     minHeight: '50%',
     minWidth: '50%',
