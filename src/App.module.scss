@@ -1,0 +1,15 @@
+@import "src/styles/base/variables";
+
+.app {
+  &__bubblesContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid $red;
+    z-index: 1;
+  }
+}

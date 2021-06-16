@@ -1,0 +1,21 @@
+@import "src/styles/base/variables";
+
+.button {
+  padding: 5px 30px;
+  text-align: center;
+  font-size: $f5;
+  line-height: $lh2;
+  background-color: $white;
+  border: 1px solid $black;
+  border-radius: 10px;
+  transition: background-color $hover-transition;
+
+  &:hover {
+    background-color: $white-grey;
+  }
+
+  &_active {
+    background-color: $red;
+  }
+}
+
