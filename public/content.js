@@ -14,8 +14,10 @@ function main() {
     if (testChromeExtension) {
       if (testChromeExtension.style.display === 'none') {
         testChromeExtension.style.display = 'block'
+        window.postMessage({ type: 'MOUNT_THE_APP' }, '*')
       } else {
         testChromeExtension.style.display = 'none'
+        window.postMessage({ type: 'UNMOUNT_THE_APP' }, '*')
       }
     } else {
       // Fetch the local React index.html page
